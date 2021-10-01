@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100wv;
+
+}
+.main-container{
+    
+    display: grid;
+    grid-template-columns: 100px 400px 100px 300px 100px;
+    grid-template-rows: 100px 800px 100px;
+    grid-template-areas: 
+    "leftstreet-container leftspace-container centerstreet-container upsstreet-container rightstreet-container"
+    "leftstreet-container leftspace-container centerstreet-container rightspace-container rightstreet-container"
+    "leftstreet-container downsstreet-container  centerstreet-container rightspace-container rightstreet-container";
+    height: 1000px;
+    width: 1000px;
+    background-color: rgb(15, 241, 83);
+}
+.main-container > div{
+    display: flex;
+}
+.main-container > img{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100px;
+}
+.vertical{
+    flex-direction: column;
+}
+.leftstreet-container{
+    grid-area: leftstreet-container;
+}
+.downsstret-container{
+    grid-area: downsstreet-container;
+}
+.centerstreet-container{
+    grid-area: centerstreet-container;
+}
+.upsstreet-container{
+    grid-area: upsstreet-container;
+}
+.rightstreet-container{
+    grid-area: rightstreet-container;
+}
+.leftspace-container{
+    grid-area: leftspace-container;
+}
+.rightspace-container{
+    grid-area: rightspace-container;
+}
+
+.image-container{
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.img-container:hover .image-container{
+    display: flex;
+
+}
+.img-container{
+    display: flex;
+    position: relative;
+}
+
+
